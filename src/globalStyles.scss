@@ -1,0 +1,21 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--mantine-color-white);
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+button, select {
+	text-transform: none;
+}
