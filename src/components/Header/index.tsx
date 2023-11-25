@@ -1,23 +1,39 @@
 import React from 'react';
-import header from './Header.module.scss';
+import styles from './Header.module.scss';
+import logo from '../../assets/logo.png';
+import { useDisclosure } from '@mantine/hooks';
+import { Burger } from '@mantine/core';
 
-const Index = (): React.ReactNode => {
+const Header = (): React.ReactNode => {
+    const [isOpen, { toggle }] = useDisclosure();
+
     return (
-        <div>
-            <div className={header.logo}>
-                <img
-                    src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
-                    alt='Google'
+        <div className={styles.header}>
+            <div className={styles.top}>
+                <img src={logo} alt='Garagio logo' className={styles.logo} />
+                <Burger
+                    opened={isOpen}
+                    onClick={toggle}
+                    className={styles.burger}
                 />
             </div>
-            <div className={header.content}>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href='#'>About</a>
+            <div className={`${styles.content} `} data-isOpen={isOpen}>
+                <nav className={styles.nav}>
+                    <ul className={styles.ul}>
+                        <li className={styles.item}>
+                            <a href='#' className={styles.link}>
+                                Home
+                            </a>
                         </li>
-                        <li>
-                            <a href='#'>Store</a>
+                        <li className={styles.item}>
+                            <a href='#' className={styles.link}>
+                                About
+                            </a>
+                        </li>
+                        <li className={styles.item}>
+                            <a href='#' className={styles.link}>
+                                Our team
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -26,4 +42,4 @@ const Index = (): React.ReactNode => {
     );
 };
 
-export default Index;
+export default Header;
