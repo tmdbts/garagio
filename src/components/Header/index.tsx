@@ -21,7 +21,7 @@ const Header = (): React.ReactNode => {
                 <nav className={styles.nav}>
                     <ul className={styles.ul}>
                         <li className={styles.item}>
-                            <a href='#' className={styles.link}>
+                            <a href='/' className={styles.link}>
                                 Home
                             </a>
                         </li>
