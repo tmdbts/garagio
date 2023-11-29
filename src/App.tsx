@@ -4,6 +4,7 @@ import { MantineProvider } from '@mantine/core';
 import theme from './mantineTheme.ts';
 import Router from './Router.tsx';
 import { localStorageColorSchemeManager } from './colorSchemeManager.ts';
+import scssVariablesResolver from './scssVariablesResolver.ts';
 
 const colorSchemeManager = localStorageColorSchemeManager({
     key: 'color-scheme',
@@ -15,7 +16,8 @@ function App(): React.ReactNode {
             <MantineProvider
                 theme={theme}
                 defaultColorScheme={'light'}
-                colorSchemeManager={colorSchemeManager}>
+                colorSchemeManager={colorSchemeManager}
+                cssVariablesResolver={scssVariablesResolver}>
                 <Router />
             </MantineProvider>
         </BrowserRouter>
