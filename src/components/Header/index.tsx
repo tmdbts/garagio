@@ -26,7 +26,7 @@ const Header = (): React.ReactNode => {
                             </a>
                         </li>
                         <li className={styles.item}>
-                            <a href='#' className={styles.link}>
+                            <a href='/about/' className={styles.link}>
                                 About
                             </a>
                         </li>
