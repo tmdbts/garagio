@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { MantineProvider } from '@mantine/core';
 import theme from './mantineTheme.ts';
 import Router from './Router.tsx';
 import { localStorageColorSchemeManager } from './colorSchemeManager.ts';
+import scssVariablesResolver from './scssVariablesResolver.ts';
 
 const colorSchemeManager = localStorageColorSchemeManager({
     key: 'color-scheme',
@@ -12,14 +13,13 @@ const colorSchemeManager = localStorageColorSchemeManager({
 function App(): React.ReactNode {
     return (
         <BrowserRouter>
-            <ColorSchemeScript defaultColorScheme='dark'>
-                <MantineProvider
-                    theme={theme}
-                    defaultColorScheme={'auto'}
-                    colorSchemeManager={colorSchemeManager}>
-                    <Router />
-                </MantineProvider>
-            </ColorSchemeScript>
+            <MantineProvider
+                theme={theme}
+                defaultColorScheme={'light'}
+                colorSchemeManager={colorSchemeManager}
+                cssVariablesResolver={scssVariablesResolver}>
+                <Router />
+            </MantineProvider>
         </BrowserRouter>
     );
 }

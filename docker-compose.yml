@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  maria_catering:
+    container_name: garagio
+    image: tmdbts/garagio
+    ports:
+      - "8096:80"
+    restart: unless-stopped
+    networks:
+      nginx_bridge:
+        ipv4_address: 172.18.0.12
+
+networks:
+  nginx_bridge:
+    external: true
+    name: nginx_proxy_manager_default
