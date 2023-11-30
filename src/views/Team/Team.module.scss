@@ -1,7 +1,7 @@
 $top-gap: 5rem;
 $bottom-gap: 20rem;
 
-.about {
+.team {
 	.content {
 		position: relative;
 
@@ -26,7 +26,7 @@ $bottom-gap: 20rem;
 }
 
 @media (min-width: 768px) {
-	.about {
+	.team {
 		.content {
 			.titleWrapper {
 			}
@@ -40,7 +40,7 @@ $bottom-gap: 20rem;
 }
 
 @media (min-width: 1024px) {
-	.about {
+	.team {
 		.content {
 			.titleWrapper {
 			}

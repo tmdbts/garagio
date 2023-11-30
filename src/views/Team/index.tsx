@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header';
-import styles from './About.module.scss';
+import styles from './Team.module.scss';
 
-const About = (): React.ReactNode => {
+const Team = (): React.ReactNode => {
     return (
-        <div className={styles.about}>
+        <div className={styles.team}>
             <Header />
             <main className={styles.content}>
                 <div className={styles.titleWrapper}>
-                    <h1 className={styles.title}>Conhece o nosso projeto</h1>
+                    <h1 className={styles.title}>A equipa</h1>
                 </div>
                 <p className={styles.description}>
                     Somos um grupo de estudantes de Engenharia Informática
@@ -28,4 +28,4 @@ const About = (): React.ReactNode => {
     );
 };
 
-export default About;
+export default Team;
