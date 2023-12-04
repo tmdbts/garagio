@@ -10,15 +10,6 @@
 
 			.items {
 				.item {
-
-					&:hover {
-
-						.title {
-							.icon {
-							}
-						}
-					}
-
 					.title {
 						font-size: 1.3rem;
 						text-align: left;
@@ -35,12 +26,10 @@
 		.imageColumn {
 			padding: 1rem;
 			background-color: var(--mantine-color-primary);
-
-			.items {
-				.item {
-					.image {
-						width: 100%;
-					}
+      
+			.item {
+				.image {
+					width: 100%;
 				}
 			}
 		}
@@ -84,11 +73,9 @@
 			.imageColumn {
 				height: 100%;
 
-				.items {
-					.item {
-						.image {
-							max-width: 25rem;
-						}
+				.item {
+					.image {
+						max-width: 25rem;
 					}
 				}
 			}
