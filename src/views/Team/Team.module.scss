@@ -1,0 +1,54 @@
+$top-gap: 5rem;
+$bottom-gap: 20rem;
+
+.team {
+	.content {
+		position: relative;
+
+		.titleWrapper {
+			background-color: var(--mantine-color-primary);
+			text-align: center;
+			padding-top: $top-gap;
+			padding-bottom: $bottom-gap;
+		}
+
+		.description {
+			margin: 0 1rem;
+			padding: 1rem;
+			position: absolute;
+			bottom: -13rem;
+			background-color: var(--mantine-color-white);
+			border-radius: 1rem;
+			text-align: justify;
+			box-shadow: 0 2px 19px -7px rgba(0, 0, 0, 0.75);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.team {
+		.content {
+			.titleWrapper {
+			}
+
+			.description {
+				margin: 0 5rem;
+				bottom: -5rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.team {
+		.content {
+			.titleWrapper {
+			}
+
+			.description {
+				margin: 0 20rem;
+				bottom: -6rem;
+			}
+		}
+	}
+}

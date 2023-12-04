@@ -31,7 +31,7 @@ const Header = (): React.ReactNode => {
                             </a>
                         </li>
                         <li className={styles.item}>
-                            <a href='#' className={styles.link}>
+                            <a href='/team/' className={styles.link}>
                                 Our team
                             </a>
                         </li>
