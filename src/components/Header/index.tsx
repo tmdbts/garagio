@@ -10,7 +10,13 @@ const Header = (): React.ReactNode => {
     return (
         <div className={styles.header}>
             <div className={styles.top}>
-                <img src={logo} alt='Garagio logo' className={styles.logo} />
+                <a href='/' className={styles.link}>
+                    <img
+                        src={logo}
+                        alt='Garagio logo'
+                        className={styles.logo}
+                    />
+                </a>
                 <Burger
                     opened={isOpen}
                     onClick={toggle}
@@ -27,12 +33,12 @@ const Header = (): React.ReactNode => {
                         </li>
                         <li className={styles.item}>
                             <a href='/about/' className={styles.link}>
-                                About
+                                Sobre nós
                             </a>
                         </li>
                         <li className={styles.item}>
                             <a href='/team/' className={styles.link}>
-                                Our team
+                                A equipa
                             </a>
                         </li>
                     </ul>
