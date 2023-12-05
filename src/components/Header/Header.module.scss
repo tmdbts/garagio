@@ -2,23 +2,22 @@
 	padding: 0 1rem;
 	display: flex;
 	flex-direction: column;
-	//justify-content: space-between;
 
 	.top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		.logo {
-			width: 9rem;
+		.link {
+			.logo {
+				width: 9rem;
+			}
 		}
 	}
 
 	.content {
 		display: none;
 		flex-direction: column;
-		//justify-content: space-between;
-		//align-items: center;
 
 		&[data-isOpen="true"] {
 			display: flex;
@@ -43,26 +42,6 @@
 				}
 			}
 		}
-
-		//.nav {
-		//	.ul {
-		//		display: flex;
-		//		justify-content: space-between;
-		//
-		//		.item {
-		//			margin-left: 20px;
-		//
-		//			.link {
-		//				height: 100%;
-		//				transition: all 0.2s ease-in-out;
-		//
-		//				&:hover {
-		//					color: var(--mantine-primary-color-filled);
-		//				}
-		//			}
-		//		}
-		//	}
-		//}
 	}
 }
 
