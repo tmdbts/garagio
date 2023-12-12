@@ -1,6 +1,6 @@
-import { createTheme } from '@mantine/core';
+import { createTheme, MantineColorsTuple } from '@mantine/core';
 
-const primary = [
+const primary: MantineColorsTuple = [
     '#f4fce7',
     '#e9f6d6',
     '#d3edae',
@@ -11,9 +11,9 @@ const primary = [
     '#7eba29',
     '#6fa520',
     '#5c8f12',
-] as const;
+];
 
-const secondary = [
+const secondary: MantineColorsTuple = [
     '#ffeaea',
     '#fdd6d6',
     '#f0acad',
@@ -24,9 +24,9 @@ const secondary = [
     '#be2429',
     '#aa1d23',
     '#95121c',
-] as const;
+];
 
-const darkGreen = [
+const darkGreen: MantineColorsTuple = [
     '#ebfff7',
     '#d7fcee',
     '#a9fbdc',
@@ -37,9 +37,9 @@ const darkGreen = [
     '#30de91',
     '#24c580',
     '#03aa6d',
-] as const;
+];
 
-const beige = [
+const beige: MantineColorsTuple = [
     '#fdf4ec',
     '#f0e8de',
     '#dfd0bd',
@@ -50,9 +50,8 @@ const beige = [
     '#9c7749',
     '#8b6a3e',
     '#7a5a31',
-] as const;
-
-const gray = [
+];
+const gray: MantineColorsTuple = [
     '#fff2f5',
     '#ece6e7',
     '#cfcdcd',
@@ -63,7 +62,7 @@ const gray = [
     '#737171',
     '#686465',
     '#5f5457',
-] as const;
+];
 
 const theme = createTheme({
     primaryColor: 'primary',
