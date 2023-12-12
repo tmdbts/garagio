@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import styles from './Team.module.scss';
+import teamPhoto from '../../assets/img.png';
 
 const Team = (): React.ReactNode => {
     return (
@@ -9,6 +10,11 @@ const Team = (): React.ReactNode => {
             <main className={styles.content}>
                 <div className={styles.titleWrapper}>
                     <h1 className={styles.title}>A equipa</h1>
+                    <img
+                        src={teamPhoto}
+                        alt='All the elements of the project'
+                        className={styles.image}
+                    />
                 </div>
                 <p className={styles.description}>
                     Somos um grupo de estudantes de Engenharia Informática
