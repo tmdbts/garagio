@@ -11,6 +11,7 @@ const Footer = (): React.ReactNode => {
             <div className={styles.socials}>
                 <a
                     href='https://www.instagram.com/garagio.app/'
+                    target='_blank'
                     className={styles.link}>
                     <IconBrandInstagram />
                 </a>
