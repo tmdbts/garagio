@@ -1,0 +1,17 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	flex-shrink: 0;
+	padding: 0 1rem;
+	color: var(--mantine-color-gray-8);
+	background-color: var(--mantine-color-primary);
+
+	.copyright {
+	}
+
+	.socials {
+		.link {
+			display: flex;
+		}
+	}
+}

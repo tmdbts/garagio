@@ -1,8 +1,13 @@
 $top-gap: 5rem;
-$bottom-gap: 20rem;
+$bottom-gap: 10rem;
 
 .team {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	.content {
+		flex: 1;
 		position: relative;
 
 		.titleWrapper {
@@ -10,6 +15,12 @@ $bottom-gap: 20rem;
 			text-align: center;
 			padding-top: $top-gap;
 			padding-bottom: $bottom-gap;
+
+			.image {
+				padding: 5rem;
+				width: 100%;
+				max-width: 35rem;
+			}
 		}
 
 		.description {
@@ -33,7 +44,7 @@ $bottom-gap: 20rem;
 
 			.description {
 				margin: 0 5rem;
-				bottom: -5rem;
+				bottom: 2rem;
 			}
 		}
 	}
@@ -43,11 +54,13 @@ $bottom-gap: 20rem;
 	.team {
 		.content {
 			.titleWrapper {
+				padding-top: 3rem;
+				padding-bottom: 1rem;
 			}
 
 			.description {
 				margin: 0 20rem;
-				bottom: -6rem;
+				bottom: 6rem;
 			}
 		}
 	}

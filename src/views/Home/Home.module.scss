@@ -1,30 +1,38 @@
 .home {
-	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 
 	.hero {
-		padding: 1rem;
-		background-color: var(--mantine-color-primary);
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		position: relative;
 		width: 100%;
-		height: calc(100% - 15rem);
 
-		.description {
-			font-size: 1.5rem;
-		}
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+			background-color: var(--mantine-color-primary);
+			height: calc(100% - 15rem);
 
-		.cta {
-			position: absolute;
-			bottom: -1rem;
-			width: calc(100% - 2rem);
-			background-color: var(--mantine-color-secondary);
-		}
+			.description {
+				font-size: 1.5rem;
+			}
 
-		.image {
-			display: block;
-			width: 100%;
-			order: -1;
+			.cta {
+				position: absolute;
+				bottom: 8rem;
+				width: calc(100% - 2rem);
+				background-color: var(--mantine-color-secondary);
+			}
+
+			.image {
+				display: block;
+				width: 100%;
+				order: -1;
+			}
 		}
 	}
 }
@@ -32,25 +40,28 @@
 @media only screen and (min-width: 768px) {
 	.home {
 		.hero {
-			justify-content: center;
-			position: relative;
 
-			.description {
-				font-size: 2rem;
-			}
+			.wrapper {
+				justify-content: center;
+				position: relative;
+				padding: 10rem 2rem;
 
-			.cta {
-				position: unset;
-				width: 10rem;
+				.description {
+					font-size: 2rem;
+				}
 
-			}
+				.cta {
+					position: unset;
+					width: 10rem;
+				}
 
-			.image {
-				order: initial;
-				width: 40rem;
-				position: absolute;
-				bottom: -10rem;
-				right: -2rem;
+				.image {
+					order: initial;
+					width: 40rem;
+					position: absolute;
+					bottom: -10rem;
+					right: -2rem;
+				}
 			}
 		}
 	}
@@ -59,16 +70,18 @@
 @media only screen and (min-width: 1024px) {
 	.home {
 		.hero {
-			padding-left: 4rem;
+			.wrapper {
+				padding-left: 4rem;
 
-			.description {
-				max-width: 60rem;
-			}
+				.description {
+					max-width: 60rem;
+				}
 
-			.image {
-				width: 50rem;
-				bottom: -11rem;
-				right: 0;
+				.image {
+					width: 50rem;
+					bottom: -11rem;
+					right: 0;
+				}
 			}
 		}
 	}
