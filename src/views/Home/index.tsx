@@ -6,6 +6,10 @@ import illustration from '../../assets/home_illustration.png';
 import Footer from '../../components/Footer';
 
 const Home = (): React.ReactNode => {
+    const handleClick = () => {
+        window.location.href = '/about/';
+    };
+
     return (
         <div className={styles.home}>
             <Header />
@@ -16,7 +20,10 @@ const Home = (): React.ReactNode => {
                         procura - organize ou descubra vendas de garagem com a
                         nossa aplicação.
                     </p>
-                    <Button radius='xl' className={styles.cta}>
+                    <Button
+                        radius='xl'
+                        onClick={handleClick}
+                        className={styles.cta}>
                         SAIBA MAIS
                     </Button>
                     <img
