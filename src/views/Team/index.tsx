@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import styles from './Team.module.scss';
 import teamPhoto from '../../assets/img.png';
+import Footer from '../../components/Footer';
 
 const Team = (): React.ReactNode => {
     return (
@@ -30,6 +31,7 @@ const Team = (): React.ReactNode => {
                     sustentáveis.
                 </p>
             </main>
+            <Footer />
         </div>
     );
 };

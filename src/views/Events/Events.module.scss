@@ -1,22 +1,30 @@
 .events {
-	.hero {
-		padding: 2rem 0;
-		text-align: center;
-		background-color: var(--mantine-color-primary);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 
-		.title {
-			font-size: 2rem;
+	.content {
+		flex: 1;
+
+		.hero {
+			padding: 2rem 0;
+			text-align: center;
+			background-color: var(--mantine-color-primary);
+
+			.title {
+				font-size: 2rem;
+			}
+
+			.subtitle {
+				color: var(--mantine-color-dark-4);
+			}
 		}
 
-		.subtitle {
-			color: var(--mantine-color-dark-4);
+		.eventsList {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
-	}
-
-	.eventsList {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 	}
 }
 

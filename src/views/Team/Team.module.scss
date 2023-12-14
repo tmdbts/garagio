@@ -2,7 +2,12 @@ $top-gap: 5rem;
 $bottom-gap: 10rem;
 
 .team {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	.content {
+		flex: 1;
 		position: relative;
 
 		.titleWrapper {
@@ -39,7 +44,7 @@ $bottom-gap: 10rem;
 
 			.description {
 				margin: 0 5rem;
-				bottom: -5rem;
+				bottom: 2rem;
 			}
 		}
 	}
@@ -55,7 +60,7 @@ $bottom-gap: 10rem;
 
 			.description {
 				margin: 0 20rem;
-				bottom: -5rem;
+				bottom: 6rem;
 			}
 		}
 	}

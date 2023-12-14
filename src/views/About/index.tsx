@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import photoOne from '../../assets/path3.png';
 import photoTwo from '../../assets/path9.png';
 import photoThree from '../../assets/path103.png';
+import Footer from '../../components/Footer';
 
 const About = (): React.ReactNode => {
     return (
@@ -84,6 +85,7 @@ const About = (): React.ReactNode => {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     );
 };
