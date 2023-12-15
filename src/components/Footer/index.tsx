@@ -6,7 +6,7 @@ const Footer = (): React.ReactNode => {
     return (
         <footer className={styles.footer}>
             <div className={styles.copyright}>
-                &copy; 2021&nbsp;garagio. All rights reserved.
+                &copy; 2023&nbsp;garagio. All rights reserved.
             </div>
             <div className={styles.socials}>
                 <a

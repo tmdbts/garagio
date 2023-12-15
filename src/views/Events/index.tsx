@@ -11,9 +11,9 @@ const Events = (): React.ReactNode => {
             <Header />
             <main className={styles.content}>
                 <section className={styles.hero}>
-                    <h1 className={styles.title}>Events</h1>
+                    <h1 className={styles.title}>Eventos</h1>
                     <h4 className={styles.subtitle}>
-                        Criamos experiencias inesqueciveis
+                        Criamos experiências inesquecíveis
                     </h4>
                 </section>
                 <section className={styles.eventsList}>
