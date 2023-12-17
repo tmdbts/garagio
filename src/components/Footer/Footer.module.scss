@@ -10,7 +10,10 @@
 	}
 
 	.socials {
+		display: flex;
+
 		.link {
+			margin-left: 1rem;
 			display: flex;
 		}
 	}

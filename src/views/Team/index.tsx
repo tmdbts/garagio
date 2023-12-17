@@ -28,19 +28,8 @@ const Team = (): React.ReactNode => {
                     poderiam ser reutilizados. Desenvolvemos uma aplicação que
                     facilita a organização e divulgação de vendas de garagem,
                     promovendo o conceito de up-cycling e incentivando práticas
-                    sustentáveis. 
-                    
-                    
+                    sustentáveis.
                 </p>
-                <p className={styles.description2}>
-                AVISO LEGAL:  Os conteúdos constantes neste website foram 
-                    realizados por alunos no âmbito de uma disciplina - Processos de 
-                    Gestão e de Inovação - do 3º ano da licenciatura em Engenharia
-                    Informática da faculdade de Ciências e Tecnologia da Universidade 
-                    de Coimbra(FCTUC), pelo que a FCTUC não se responsabiliza
-                    pelo seu conteúdo.
-                </p>
-                
             </main>
             <Footer />
         </div>
