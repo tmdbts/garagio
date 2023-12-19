@@ -7,8 +7,8 @@ import Footer from '../../components/Footer';
 
 const Home = (): React.ReactNode => {
     const handleClick = () => {
-        // @ts-ignore
-        window?.gtag('event', 'click-know-more')
+        window?.gtag('event', 'click-know-more');
+
         window.location.href = '/about/';
     };
 
