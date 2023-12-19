@@ -1,0 +1,26 @@
+$top-gap: 5rem;
+$bottom-gap: 10rem;
+
+.legalNotice {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-between;
+
+	.content {
+		flex: 1;
+		position: relative;
+
+		.hero {
+			background-color: var(--mantine-color-primary);
+			text-align: center;
+			padding-top: $top-gap;
+			padding-bottom: $bottom-gap;
+		}
+
+		.description {
+			padding: 1rem;
+		}
+	}
+
+}

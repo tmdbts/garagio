@@ -9,6 +9,9 @@ const Footer = (): React.ReactNode => {
                 &copy; 2023&nbsp;garagio. All rights reserved.
             </div>
             <div className={styles.socials}>
+                <a href='/legal-notice' className={styles.link}>
+                    Aviso Legal
+                </a>
                 <a
                     href='https://www.instagram.com/garagio.app/'
                     target='_blank'
