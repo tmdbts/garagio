@@ -19,7 +19,7 @@
 		display: none;
 		flex-direction: column;
 
-		&[data-isOpen="true"] {
+		&[data-is-open="true"] {
 			display: flex;
 		}
 

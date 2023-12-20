@@ -23,7 +23,7 @@ const Header = (): React.ReactNode => {
                     className={styles.burger}
                 />
             </div>
-            <div className={`${styles.content} `} data-isOpen={isOpen}>
+            <div className={`${styles.content} `} data-is-open={isOpen}>
                 <nav className={styles.nav}>
                     <ul className={styles.ul}>
                         <li className={styles.item}>
